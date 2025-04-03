@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Financial Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#income-statement">Income Statement</a></li>
+                    <li><a href="#balance-sheet">Balance Sheet</a></li>
+                    <li><a href="#cash-flow">Cash Flow Statement</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="container">
+            <!-- Income Statement Section -->
+            <section id="income-statement">
+                <h2>Income Statement</h2>
+                <form id="income-form">
+                    <div class="form-group">
+                        <label for="revenue">Revenue:</label>
+                        <input type="number" id="revenue" placeholder="Enter revenue">
+                    </div>
+                    <div class="form-group">
+                        <label for="expenses">Expenses:</label>
+                        <input type="number" id="expenses" placeholder="Enter expenses">
+                    </div>
+                    <button type="submit">Calculate Profit/Loss</button>
+                </form>
+                <div id="income-result"></div>
+            </section>
+
+            <!-- Balance Sheet Section -->
+            <section id="balance-sheet">
+                <h2>Balance Sheet</h2>
+                <form id="balance-form">
+                    <div class="form-group">
+                        <label for="assets">Assets:</label>
+                        <input type="number" id="assets" placeholder="Enter assets">
+                    </div>
+                    <div class="form-group">
+                        <label for="liabilities">Liabilities:</label>
+                        <input type="number" id="liabilities" placeholder="Enter liabilities">
+                    </div>
+                    <button type="submit">Calculate Equity</button>
+                </form>
+                <div id="balance-result"></div>
+            </section>
+
+            <!-- Cash Flow Statement Section -->
+            <section id="cash-flow">
+                <h2>Cash Flow Statement</h2>
+                <form id="cash-flow-form">
+                    <div class="form-group">
+                        <label for="cash-inflows">Cash Inflows:</label>
+                        <input type="number" id="cash-inflows" placeholder="Enter cash inflows">
+                    </div>
+                    <div class="form-group">
+                        <label for="cash-outflows">Cash Outflows:</label>
+                        <input type="number" id="cash-outflows" placeholder="Enter cash outflows">
+                    </div>
+                    <button type="submit">Calculate Net Cash Flow</button>
+                </form>
+                <div id="cash-flow-result"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Financial Dashboard. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
